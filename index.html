@@ -1,0 +1,2696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Velino IDE — a modern embedded development environment powered by A.I.M — Advance Idea Mechanics."
+  >
+
+  <title>Velino IDE | Build. Program. | Innovate.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================
+       VELINO SPLASH SCREEN
+       ========================================================= -->
+
+  <div id="splash-screen">
+
+    <div class="splash-line"></div>
+
+    <div class="splash-logo" aria-label="VELINO ECOSYSTEM">
+      <span>V</span>
+      <span>E</span>
+      <span>L</span>
+      <span>I</span>
+      <span>N</span>
+      <span>O</span>
+
+      <span class="space"> </span>
+
+      <span>I</span>
+      <span>D</span>
+      <span>E</span>
+      <span>.</span>
+      <!-- <span>S</span>
+      <span>Y</span>
+      <span>S</span>
+      <span>T</span>
+      <span>E</span>
+      <span>M</span> -->
+    </div>
+
+    <div class="splash-line"></div>
+
+    <div class="splash-tagline">
+      Full Stack Developer • AI Enthusiast • Innovator
+    </div>
+
+    <div class="developer-credit">
+      Developed by Shiva Velishoju
+    </div>
+
+    <div class="splash-progress">
+      <span></span>
+    </div>
+
+  </div>
+
+
+  <!-- INTRO SOUND -->
+
+  <audio id="introSound" preload="auto" playsinline>
+    <source
+      src="effect-for-logo-intro-186595.mp3"
+      type="audio/mpeg"
+    >
+  </audio>
+
+
+  <!-- =========================================================
+       AMBIENT BACKGROUND
+       ========================================================= -->
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="grid-bg"></div>
+
+
+  <!-- =========================================================
+       NAVIGATION
+       ========================================================= -->
+
+  <header class="navbar" id="navbar">
+
+    <a
+      class="brand"
+      href="#home"
+      aria-label="Velino IDE Home"
+    >
+      <!-- <span class="brand-mark">&lt;/&gt;</span> -->
+
+      <span class="brand-name">
+        Velino<span> IDE.</span>
+      </span>
+    </a>
+
+
+    <button
+      class="menu-btn"
+      id="menuBtn"
+      aria-label="Toggle navigation"
+    >
+      ☰
+    </button>
+
+
+    <nav id="navMenu">
+
+      <a class="active" href="#home">
+        Home
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#story">
+        Story
+      </a>
+
+      <a href="#ide-features">
+        IDE Features
+      </a>
+
+      <!-- <a href="#features">
+        Features
+      </a> -->
+
+      <a href="#technology">
+        Technology
+      </a>
+
+      <a href="#journey">
+        Journey
+      </a>
+
+      <a href="#versions">
+        Versions
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+    </nav>
+
+
+    <a
+      class="nav-cta"
+      href="#ide-features"
+    >
+      Discover Velino
+      <span>→</span>
+    </a>
+
+  </header>
+
+
+  <!-- =========================================================
+       MAIN
+       ========================================================= -->
+
+  <main>
+
+
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+
+    <section
+      class="hero section"
+      id="home"
+    >
+
+      <!-- HERO TECHNOLOGY BACKGROUND -->
+<!-- FULL HERO VIDEO BACKGROUND -->
+<div class="hero-video-background">
+  <video
+    id="heroBgVideo"
+    class="hero-bg-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+  >
+    <source src="velino-intro.mp4" type="video/mp4">
+  </video>
+</div>
+
+<!-- VIDEO SOUND BUTTON -->
+<button
+  id="heroSoundBtn"
+  class="hero-sound-btn"
+  type="button"
+  aria-label="Turn video sound on"
+  aria-pressed="false"
+>
+  🔇
+</button>
+      <!-- HERO CODE
+
+      <div
+        class="hero-code"
+        aria-hidden="true"
+      >
+
+        <span>
+          #include &lt;Arduino.h&gt;
+        </span>
+
+        <span>
+          void setup() {
+        </span>
+
+        <span>
+          &nbsp;&nbsp;Serial.begin(9600);
+        </span>
+
+        <span>
+          &nbsp;&nbsp;pinMode(LED_BUILTIN, OUTPUT);
+        </span>
+
+        <span>
+          }
+        </span>
+
+        <span>
+          void loop() {
+        </span>
+
+        <span>
+          &nbsp;&nbsp;digitalWrite(LED_BUILTIN, HIGH);
+        </span>
+
+        <span>
+          &nbsp;&nbsp;delay(1000);
+        </span>
+
+        <span>
+          }
+        </span>
+
+      </div> -->
+
+
+      <!-- HERO CONTENT -->
+
+      <div class="hero-copy reveal">
+
+        <div class="eyebrow">
+          <i></i>
+          Next Generation Embedded IDE
+        </div>
+
+
+        <h1>
+          Build.<br>
+          Program.<br>
+          <strong>Innovate.</strong>
+        </h1>
+
+
+        <p>
+          Velino IDE is a modern development environment built to make embedded
+          development clearer, faster and smarter — from writing code to
+          connecting real hardware.
+        </p>
+
+
+        <div class="hero-actions">
+
+          <a
+            class="btn primary"
+            href="#ide-features"
+          >
+            Explore Velino IDE
+            <span>→</span>
+          </a>
+
+          <a
+            class="btn ghost"
+            href="#story"
+          >
+            Read the story
+            <span>↓</span>
+          </a>
+
+        </div>
+
+
+        <div class="hero-meta">
+
+          <div>
+            <b>Arduino</b>
+            <small>Supported</small>
+          </div>
+
+          <div>
+            <b>ESP32</b>
+            <small>Supported</small>
+          </div>
+
+          <div>
+            <b>v29</b>
+            <small>Evolution</small>
+          </div>
+
+          <div>
+            <b>Velino </b>
+            <small>Powered</small>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-identity-badge">
+        <div class="identity-dot"></div>
+      
+        <div class="identity-info">
+          <span class="identity-label">Founder </span>
+          <strong>SHIVA VELISHOJU</strong>
+          <small> Full Stack Developer • AI Enthusiast • Innovator</small>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         ABOUT
+         ========================================================= -->
+
+    <section
+      class="section about"
+      id="about"
+    >
+
+      <div class="section-kicker reveal">
+        ABOUT VELINO IDE
+      </div>
+
+
+      <div class="about-head reveal">
+
+        <h2>
+          Not just an IDE.<br>
+          <span>A journey turned into software.</span>
+        </h2>
+
+
+        <p>
+          Velino IDE grew from a real embedded-development problem into a
+          complete software vision. It is designed for students, makers,
+          engineers and developers who want fewer obstacles between an idea
+          and working hardware.
+        </p>
+
+      </div>
+
+
+      <div class="about-grid">
+
+        <div class="about-panel reveal">
+
+          <span class="panel-number">
+            01
+          </span>
+
+          <h3>
+            Clarity
+          </h3>
+
+          <p>
+            Keep the development workflow clean, understandable and focused.
+          </p>
+
+        </div>
+
+
+        <div class="about-panel reveal">
+
+          <span class="panel-number">
+            02
+          </span>
+
+          <h3>
+            Speed
+          </h3>
+
+          <p>
+            Reduce repetitive setup and hardware-detection steps so ideas
+            move faster.
+          </p>
+
+        </div>
+
+
+        <div class="about-panel reveal">
+
+          <span class="panel-number">
+            03
+          </span>
+
+          <h3>
+            Usability
+          </h3>
+
+          <p>
+            Bring coding, uploading, serial tools and intelligent assistance
+            together.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         STORY
+         ========================================================= -->
+
+     
+         <section class="section story" id="story">
+         
+           <!-- STORY INTRO -->
+           <div class="story-intro reveal">
+         
+             <div>
+               <div class="section-kicker">
+                 THE STORY OF VELINO IDE
+               </div>
+         
+               <h2>
+                 From a small problem<br>
+                 <span>to a bigger vision.</span>
+               </h2>
+             </div>
+         
+             <div class="story-lead">
+         
+               <p>
+                 Some journeys do not begin with a plan. They begin with real-life
+                 problems — challenges that stay in your mind until you decide
+                 to find a better solution.
+               </p>
+         
+               <strong>
+                 “Even a small problem can stop innovation.”
+               </strong>
+         
+             </div>
+         
+           </div>
+         
+         
+           <div class="story-flow">
+         
+             <!-- STORY 01: THE BEGINNING -->
+             <article class="story-block reveal">
+         
+               <div class="story-index">01</div>
+         
+               <div class="story-content">
+         
+                 <span>THE BEGINNING</span>
+         
+                 <h3>
+                   I'm Shiva Velishoju, the Founder of VELINO IDE.
+                 </h3>
+         
+                 <p>
+                   VELINO began with a simple thought: technology should help
+                   people build their ideas, not make the process unnecessarily
+                   complicated.
+                 </p>
+         
+                 <p>
+                   What started with real-life problems has evolved into a
+                   development environment designed to simplify embedded
+                   programming and bring essential development tools together.
+                 </p>
+         
+                 <p>
+                   Today, VELINO IDE is part of the larger
+                   <b>VELINO ecosystem</b>, a vision connecting software,
+                   embedded systems, electronics, AI, IoT and robotics.
+                 </p>
+         
+                 <p>
+                   For me, this journey is not just about creating an application.
+                   It is about building practical solutions to problems that
+                   developers actually face.
+                 </p>
+         
+               </div>
+         
+             </article>
+         
+         
+             <!-- STORY 02: AUTOMATIC PORT DETECTION -->
+             <article class="story-block story-feature reveal">
+         
+               <div class="story-index">02</div>
+         
+               <div class="story-content">
+         
+                 <span>THE FIRST PROBLEM</span>
+         
+                 <h3>
+                   One friend, one Arduino, and a missing port.
+                 </h3>
+         
+                 <p>
+                   During my B.Tech, one of my friends came to me for help with
+                   an Arduino project. She was trying to upload her program,
+                   but she couldn't find the correct port in the Arduino IDE.
+                 </p>
+         
+                 <p>
+                   It was a small setup issue, but it stopped her from moving
+                   forward. She had a project to build, but before she could
+                   continue, she had to figure out how to identify and select
+                   the correct port.
+                 </p>
+         
+                 <p>
+                   That experience made me question why developers should have
+                   to struggle with repetitive setup steps before they can
+                   start working on their projects.
+                 </p>
+         
+                 <div class="story-quote">
+                   What if the IDE could automatically detect the connected
+                   board and port, making the development process simpler?
+                 </div>
+         
+                 <p>
+                   That real-life experience inspired one of the key ideas
+                   behind <b>VELINO IDE — automatic board and port detection.</b>
+                 </p>
+         
+               </div>
+         
+             </article>
+         
+         
+             <!-- STORY 03: THE NAME -->
+             <article class="story-block reveal">
+         
+               <div class="story-index">03</div>
+         
+               <div class="story-content">
+         
+                 <span>THE NAME AND THE ECOSYSTEM</span>
+         
+                 <h3>
+                   VELINO is more than a name. It's a vision.
+                 </h3>
+         
+                 <p>
+                   As the idea developed, I wanted a name that could represent
+                   more than just a single software application. I wanted
+                   something that could grow alongside my interests in
+                   embedded systems, electronics, software, AI, IoT and robotics.
+                 </p>
+         
+                 <p>
+                   That vision became <b>VELINO</b> — an ecosystem built around
+                   connecting technologies and helping people turn ideas into
+                   practical solutions.
+                 </p>
+         
+                 <div class="velino-letters">
+         
+                   <div>
+                     <b>V</b>
+                     <span>
+                       <strong>Versatile</strong> — flexible ideas and applications
+                     </span>
+                   </div>
+         
+                   <div>
+                     <b>E</b>
+                     <span>
+                       <strong>Embedded</strong> — microcontrollers and embedded systems
+                     </span>
+                   </div>
+         
+                   <div>
+                     <b>L</b>
+                     <span>
+                       <strong>Learning</strong> — education, exploration and prototyping
+                     </span>
+                   </div>
+         
+                   <div>
+                     <b>I</b>
+                     <span>
+                       <strong>Innovation</strong> — turning ideas into solutions
+                     </span>
+                   </div>
+         
+                   <div>
+                     <b>N</b>
+                     <span>
+                       <strong>Networking</strong> — communication and connectivity
+                     </span>
+                   </div>
+         
+                   <div>
+                     <b>O</b>
+                     <span>
+                       <strong>Open-source</strong> — open technologies and development ecosystems
+                     </span>
+                   </div>
+         
+                 </div>
+         
+               </div>
+         
+             </article>
+         
+         
+         
+             <!-- STORY 04: VELINO SMART AI -->
+             <article class="story-block story-feature reveal">
+             
+               <div class="story-index">04</div>
+             
+               <div class="story-content">
+             
+                 <span>THE SECOND PROBLEM</span>
+             
+                 <h3>
+                   Another friend, an IoT project, and the idea for AI assistance.
+                 </h3>
+             
+                 <p>
+                   During my B.Tech, another friend was working on a
+                   <b>Cloud-Based Weather Prediction Using IoT</b> project,
+                   collecting real-time temperature, humidity and pressure data
+                   using IoT sensors.
+                 </p>
+             
+                 <p>
+                   While developing the project, she struggled with code errors
+                   and debugging. Seeing this made me think: what if an IDE could
+                   do more than compile code? What if it could also help developers
+                   understand errors and find solutions?
+                 </p>
+             
+                 <div class="story-quote">
+                   What if your IDE could help you understand not just what went
+                   wrong, but how to fix it?
+                 </div>
+             
+                 <p>
+                   That experience inspired <b>VELINO Smart AI</b> — a built-in,
+                   chat-based AI assistant designed to help with code generation,
+                   error troubleshooting and embedded programming.
+                 </p>
+             
+                 <div class="ai-points">
+                   <span>Code generation</span>
+                   <span>Error troubleshooting</span>
+                   <span>IoT programming support</span>
+                   <span>Context-aware assistance</span>
+                 </div>
+             
+               </div>
+             
+             </article>
+       
+         
+         
+             <!-- STORY 05: THE DEVELOPMENT JOURNEY -->
+             <article class="story-block reveal">
+         
+               <div class="story-index">05</div>
+         
+               <div class="story-content">
+         
+                 <span>THE DEVELOPMENT JOURNEY</span>
+         
+                 <h3>
+                   From Version 1 to Version 32.
+                 </h3>
+         
+                 <p>
+                   Building VELINO has been a journey of learning, experimenting
+                   and continuous improvement. Over approximately three and a
+                   half years of development, the project has gone through
+                   repeated changes, redesigns and rebuilds.
+                 </p>
+         
+                 <p>
+                   Not every feature worked as expected. Some ideas had to be
+                   reconsidered, some bugs took time to understand, and some
+                   implementations needed to be rebuilt from the ground up.
+                 </p>
+         
+                 <p>
+                   Each challenge taught me something new about software
+                   development, problem-solving and turning an idea into
+                   something that people can actually use.
+                 </p>
+         
+                 <div class="persistence-grid">
+         
+                   <div>
+                     <b>Every failure</b>
+                     <span>became a lesson.</span>
+                   </div>
+         
+                   <div>
+                     <b>Every bug</b>
+                     <span>became a problem to solve.</span>
+                   </div>
+         
+                   <div>
+                     <b>Every rebuild</b>
+                     <span>created room to improve.</span>
+                   </div>
+         
+                   <div>
+                     <b>Every version</b>
+                     <span>moved the vision forward.</span>
+                   </div>
+         
+                 </div>
+         
+                 <p class="story-emphasis">
+                   Version numbers show progress. The real achievement is what
+                   each version teaches you and how much further you can go.
+                 </p>
+         
+               </div>
+         
+             </article>
+         
+         
+             <!-- STORY 06: THE CURRENT IDE -->
+             <article class="story-block story-feature reveal">
+         
+               <div class="story-index">06</div>
+         
+               <div class="story-content">
+         
+                 <span>THE VELINO IDE EXPERIENCE</span>
+         
+                 <h3>
+                   Less setup friction. More time to build.
+                 </h3>
+         
+                 <p>
+                   VELINO IDE is designed to bring essential embedded
+                   development tools together in one modern workspace.
+                   The goal is to reduce unnecessary friction between
+                   developers, their code and their hardware.
+                 </p>
+         
+                 <ul class="story-list">
+         
+                   <li>
+                     Automatic detection of supported boards and serial ports
+                   </li>
+         
+                   <li>
+                     Code editing, compilation and upload workflow
+                   </li>
+         
+                   <li>
+                     Built-in VELINO Smart AI for chat-based coding assistance
+                   </li>
+         
+                   <li>
+                     Serial Monitor for communicating with connected devices
+                   </li>
+         
+                   <li>
+                     Serial Plotter for visualizing serial data
+                   </li>
+         
+                   <li>
+                     A modern interface and organized development workspace
+                   </li>
+         
+                 </ul>
+         
+                 <p>
+                   By bringing these tools together, VELINO aims to help
+                   students, makers and developers spend less time dealing
+                   with setup and debugging difficulties and more time
+                   building, testing and improving their ideas.
+                 </p>
+         
+               </div>
+         
+             </article>
+         
+         
+             <!-- STORY 07: HARDWARE AND SOFTWARE -->
+             <article class="story-block reveal">
+         
+               <div class="story-index">07</div>
+         
+               <div class="story-content">
+         
+                 <span>FROM CODE TO THE REAL WORLD</span>
+         
+                 <h3>
+                   Software is only one part of the bigger picture.
+                 </h3>
+         
+                 <p>
+                   I don't want VELINO to stop at an IDE. Embedded development
+                   connects software with physical systems, and that connection
+                   is where digital ideas can become real-world applications.
+                 </p>
+         
+                 <p>
+                   With projects such as <b>Velino Board S1</b>, the vision
+                   extends into development hardware, electronics, sensors,
+                   robotics and connected devices.
+                 </p>
+         
+                 <p>
+                   VELINO IDE helps developers write and upload programs,
+                   while hardware projects provide a way to experiment with
+                   those programs in the physical world. Together, they
+                   represent different parts of the same ecosystem.
+                 </p>
+         
+                 <div class="story-quote">
+                   Write the code. Connect the hardware. Bring the idea to life.
+                 </div>
+         
+               </div>
+         
+             </article>
+         
+         
+             <!-- STORY 08: THE FUTURE -->
+             <article class="story-block story-feature reveal">
+         
+               <div class="story-index">08</div>
+         
+               <div class="story-content">
+         
+                 <span>THE BIGGER VISION</span>
+         
+                 <h3>
+                   What should the next generation of personal assistants look like?
+                 </h3>
+         
+                 <p>
+                   I believe the future of AI is about more than answering
+                   questions. It's about developing assistants that understand
+                   context, help people solve problems and work alongside
+                   the tools they use every day.
+                 </p>
+         
+                 <p>
+                   The long-term vision for VELINO is to explore deeper
+                   connections between software, AI, embedded systems,
+                   IoT and robotics — creating intelligent tools that help
+                   people move from an idea to a working solution.
+                 </p>
+         
+                 <p>
+                   This is an evolving vision, and there is still much to
+                   build, test and learn. Every new capability is another
+                   step toward that future.
+                 </p>
+         
+               </div>
+         
+             </article>
+         
+         
+             <!-- STORY ENDING -->
+             <article class="story-ending reveal">
+         
+               <div class="story-ending-mark">
+                 &lt;/&gt;
+               </div>
+         
+               <h3>
+                 And this is only the beginning.
+               </h3>
+         
+               <p>
+                 VELINO is not just a single application or version number.
+                 It is an evolving journey built around solving real problems,
+                 learning through experimentation and creating useful technology.
+               </p>
+         
+               <p>
+                 One friend inspired the idea for automatic port detection.
+                 Another experience inspired the idea for AI-assisted debugging.
+                 Together, these experiences helped shape the direction of
+                 VELINO IDE.
+               </p>
+         
+               <p>
+                 The journey started with small problems. The vision is to
+                 build an ecosystem that helps people turn their ideas into reality.
+               </p>
+         
+               <span>— Shiva Velishoju</span>
+         
+             </article>
+         
+           </div>
+         
+         </section>
+        
+      
+
+
+
+    <!-- =========================================================
+         NEW VELINO IDE FEATURES SHOWCASE
+         ========================================================= -->
+         <section class="ide-features" id="ide-features">
+
+          <div class="features-header reveal">
+              <span class="section-tag">VELINO IDE</span>
+              <h2>Powerful Features</h2>
+              <p>
+                  Everything you need to build, monitor and manage
+                  your embedded projects.
+              </p>
+          </div>
+      
+      
+          <div class="features-showcase">
+      
+              <!-- =========================
+                   LEFT SIDE
+              ========================== -->
+      
+              <div class="features-list">
+      
+                  <div class="ide-feature-item active" data-feature="0">
+                      <div class="feature-number">01</div>
+      
+                      <div class="feature-info">
+                          <h3>Automatic Port Detection</h3>
+                          <p>
+                              Automatically detects connected development boards
+                              and selects the correct serial port.
+                          </p>
+                      </div>
+      
+                      <span class="feature-arrow">→</span>
+                  </div>
+      
+      
+                  <div class="ide-feature-item" data-feature="1">
+                      <div class="feature-number">02</div>
+      
+                      <div class="feature-info">
+                          <h3>Velino Smart AI</h3>
+                          <p>
+                              Intelligent assistance for coding, debugging
+                              and embedded development.
+                          </p>
+                      </div>
+      
+                      <span class="feature-arrow">→</span>
+                  </div>
+      
+      
+                  <div class="ide-feature-item" data-feature="2">
+                      <div class="feature-number">03</div>
+      
+                      <div class="feature-info">
+                          <h3>Modern Code Editor</h3>
+                          <p>
+                              A clean development environment designed
+                              for modern embedded programming.
+                          </p>
+                      </div>
+      
+                      <span class="feature-arrow">→</span>
+                  </div>
+      
+      
+                  <div class="ide-feature-item" data-feature="3">
+                      <div class="feature-number">04</div>
+      
+                      <div class="feature-info">
+                          <h3>Serial Monitor</h3>
+                          <p>
+                              Monitor real-time communication between
+                              your computer and development board.
+                          </p>
+                      </div>
+      
+                      <span class="feature-arrow">→</span>
+                  </div>
+      
+      
+                  <div class="ide-feature-item" data-feature="4">
+                      <div class="feature-number">05</div>
+      
+                      <div class="feature-info">
+                          <h3>Serial Plotter</h3>
+                          <p>
+                              Visualize sensor data and serial values
+                              using real-time graphs.
+                          </p>
+                      </div>
+      
+                      <span class="feature-arrow">→</span>
+                  </div>
+      
+      
+                  <div class="ide-feature-item" data-feature="5">
+                      <div class="feature-number">06</div>
+      
+                      <div class="feature-info">
+                          <h3>Organized Workflow</h3>
+                          <p>
+                              Keep your embedded development workflow
+                              simple, organized and efficient.
+                          </p>
+                      </div>
+      
+                      <span class="feature-arrow">→</span>
+                  </div>
+      
+              </div>
+      
+      
+              <!-- =========================
+                   RIGHT SIDE
+              ========================== -->
+      
+              <div class="feature-visual-container">
+      
+                  <div class="visual-top-bar">
+                      <span class="visual-status"></span>
+      
+                      <span id="visualFeatureName">
+                          AUTOMATIC PORT DETECTION
+                      </span>
+      
+                      <span class="visual-live">
+                          LIVE
+                      </span>
+                  </div>
+      
+      
+                  <div class="feature-visual-stage">
+      
+      
+                      <!-- 01 PORT DETECTION -->
+      
+                      <div
+                          class="feature-visual-panel active"
+                          data-visual="0"
+                      >
+      
+                          <div class="animated-ui port-animation">
+      
+                              <div class="computer-window">
+      
+                                  <div class="window-header">
+                                      <span></span>
+                                      <span></span>
+                                      <span></span>
+                                  </div>
+      
+                                  <div class="window-body">
+      
+                                      <div class="scan-title">
+                                          Scanning connected boards...
+                                      </div>
+      
+                                      <div class="scan-line"></div>
+      
+                                      <div class="board-detection">
+      
+                                          <div class="usb-icon">
+                                              USB
+                                          </div>
+      
+                                          <div>
+                                              <strong>Arduino Uno</strong>
+                                              <small>USB Serial Device</small>
+                                          </div>
+      
+                                          <div class="connected">
+                                              CONNECTED
+                                          </div>
+      
+                                      </div>
+      
+                                      <div class="port-value">
+                                          COM<span class="typing">3</span>
+                                      </div>
+      
+                                  </div>
+      
+                              </div>
+      
+                          </div>
+      
+                          <!-- REAL IMAGE PLACEHOLDER -->
+      
+                          <img
+                              class="real-feature-image"
+                              src="assets/features/port-detection.png"
+                              alt="Automatic Port Detection"
+                          >
+      
+                      </div>
+      
+      
+                      <!-- 02 SMART AI -->
+      
+                      <div
+                          class="feature-visual-panel"
+                          data-visual="1"
+                      >
+      
+                          <div class="animated-ui ai-animation">
+      
+                              <div class="ai-core">
+      
+                                  <div class="ai-ring ring-one"></div>
+                                  <div class="ai-ring ring-two"></div>
+                                  <div class="ai-ring ring-three"></div>
+      
+                                  <div class="ai-center">
+                                      AI
+                                  </div>
+      
+                              </div>
+      
+                              <div class="ai-particles">
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                              </div>
+      
+                              <div class="ai-message">
+                                  <span>Velino Smart AI</span>
+                                  <strong>Analyzing your code...</strong>
+                              </div>
+      
+                          </div>
+      
+                          <img
+                              class="real-feature-image"
+                              src="assets/features/smart-ai.png"
+                              alt="Velino Smart AI"
+                          >
+      
+                      </div>
+      
+      
+                      <!-- 03 CODE EDITOR -->
+      
+                      <div
+                          class="feature-visual-panel"
+                          data-visual="2"
+                      >
+      
+                          <div class="animated-ui editor-animation">
+      
+                              <div class="editor-window">
+      
+                                  <div class="editor-header">
+                                      <span></span>
+                                      <span></span>
+                                      <span></span>
+                                  </div>
+      
+                                  <div class="code-area">
+      
+                                      <div>
+                                          <i>01</i>
+                                          <b>void</b> setup() {
+                                      </div>
+      
+                                      <div>
+                                          <i>02</i>
+                                          &nbsp;&nbsp;Serial.begin(9600);
+                                      </div>
+      
+                                      <div>
+                                          <i>03</i>
+                                          &nbsp;&nbsp;pinMode(LED, OUTPUT);
+                                      </div>
+      
+                                      <div>
+                                          <i>04</i>
+                                          }
+                                      </div>
+      
+                                      <div class="cursor-line">
+                                          <i>05</i>
+                                          <span class="cursor"></span>
+                                      </div>
+      
+                                  </div>
+      
+                              </div>
+      
+                          </div>
+      
+                          <img
+                              class="real-feature-image"
+                              src="assets/features/code-editor.png"
+                              alt="Modern Code Editor"
+                          >
+      
+                      </div>
+      
+      
+                      <!-- 04 SERIAL MONITOR -->
+      
+                      <div
+                          class="feature-visual-panel"
+                          data-visual="3"
+                      >
+      
+                          <div class="animated-ui monitor-animation">
+      
+                              <div class="terminal-window">
+      
+                                  <div class="terminal-header">
+                                      SERIAL MONITOR
+                                  </div>
+      
+                                  <div class="terminal-body">
+      
+                                      <p>
+                                          <span>&gt;</span>
+                                          Connecting...
+                                      </p>
+      
+                                      <p class="success">
+                                          ✓ Device connected
+                                      </p>
+      
+                                      <p>
+                                          Temperature:
+                                          <strong>28.4°C</strong>
+                                      </p>
+      
+                                      <p>
+                                          Humidity:
+                                          <strong>61%</strong>
+                                      </p>
+      
+                                      <p>
+                                          Sensor:
+                                          <strong>ACTIVE</strong>
+                                      </p>
+      
+                                      <div class="terminal-cursor">
+                                          _
+                                      </div>
+      
+                                  </div>
+      
+                              </div>
+      
+                          </div>
+      
+                          <img
+                              class="real-feature-image"
+                              src="assets/features/serial-monitor.png"
+                              alt="Serial Monitor"
+                          >
+      
+                      </div>
+      
+      
+                      <!-- 05 SERIAL PLOTTER -->
+      
+                      <div
+                          class="feature-visual-panel"
+                          data-visual="4"
+                      >
+      
+                          <div class="animated-ui plotter-animation">
+      
+                              <div class="graph-window">
+      
+                                  <div class="graph-header">
+                                      SERIAL PLOTTER
+                                  </div>
+      
+                                  <div class="graph">
+      
+                                      <div class="graph-line"></div>
+      
+                                      <div class="graph-dot dot-one"></div>
+                                      <div class="graph-dot dot-two"></div>
+                                      <div class="graph-dot dot-three"></div>
+      
+                                  </div>
+      
+                                  <div class="graph-values">
+                                      <span>0</span>
+                                      <span>250</span>
+                                      <span>500</span>
+                                      <span>750</span>
+                                      <span>1000</span>
+                                  </div>
+      
+                              </div>
+      
+                          </div>
+      
+                          <img
+                              class="real-feature-image"
+                              src="assets/features/serial-plotter.png"
+                              alt="Serial Plotter"
+                          >
+      
+                      </div>
+      
+      
+                      <!-- 06 WORKFLOW -->
+      
+                      <div
+                          class="feature-visual-panel"
+                          data-visual="5"
+                      >
+      
+                          <div class="animated-ui workflow-animation">
+      
+                              <div class="workflow-node node-one">
+                                  <span>01</span>
+                                  Code
+                              </div>
+      
+                              <div class="workflow-line line-one"></div>
+      
+                              <div class="workflow-node node-two">
+                                  <span>02</span>
+                                  Build
+                              </div>
+      
+                              <div class="workflow-line line-two"></div>
+      
+                              <div class="workflow-node node-three">
+                                  <span>03</span>
+                                  Upload
+                              </div>
+      
+                              <div class="workflow-line line-three"></div>
+      
+                              <div class="workflow-node node-four">
+                                  <span>04</span>
+                                  Monitor
+                              </div>
+      
+                          </div>
+      
+                          <img
+                              class="real-feature-image"
+                              src="assets/features/workflow.png"
+                              alt="Organized Workflow"
+                          >
+      
+                      </div>
+      
+      
+                  </div>
+      
+              </div>
+      
+          </div>
+      
+      </section>
+
+
+    <!-- =========================================================
+         PHOTO STORY / DEVELOPMENT GALLERY
+         ========================================================= -->
+
+ <!-- =========================================================
+     PHOTO STORY / DEVELOPMENT GALLERY
+     ========================================================= -->
+
+<section
+class="section gallery"
+id="gallery"
+>
+
+<!-- =======================================================
+     SECTION HEADER
+     ======================================================= -->
+
+<div class="section-heading reveal">
+
+  <div class="section-kicker">
+    BEHIND THE DEVELOPMENT
+  </div>
+
+  <h2>
+    Built in the real world.
+  </h2>
+
+  <p>
+    Moments captured while developing, testing and presenting Velino IDE.
+  </p>
+
+</div>
+
+
+<!-- =======================================================
+     PHOTO / VIDEO GRID
+     ======================================================= -->
+
+<div class="photo-grid">
+
+
+  <!-- =====================================================
+       VIDEO CARD
+       ===================================================== -->
+
+  <figure class="photo-main hover-video-card reveal">
+
+    <div class="hover-video-wrapper">
+
+      <!-- POSTER IMAGE -->
+
+      <img
+        class="hover-video-poster"
+        src="https://i.postimg.cc/qv6pHgjq/velino-ide.png"
+        alt="Velino IDE development session"
+      >
+
+
+      <!-- VIDEO -->
+
+      <video
+        class="hover-gallery-video"
+        preload="metadata"
+        playsinline
+      >
+
+        <source
+          src="velino-development.mp4"
+          type="video/mp4"
+        >
+
+        Your browser does not support the video tag.
+
+      </video>
+
+
+      <!-- DARK OVERLAY -->
+
+      <div class="hover-video-overlay"></div>
+
+
+      <!-- PLAY INDICATOR -->
+
+      <div class="hover-video-indicator">
+
+        <span class="play-icon">
+          ▶
+        </span>
+
+        <div class="video-indicator-text">
+
+          <strong>
+            PLAY VIDEO
+          </strong>
+
+          <small>
+            Hover to watch
+          </small>
+
+        </div>
+
+      </div>
+
+
+      <!-- AUDIO INDICATOR -->
+
+      <div class="audio-indicator">
+
+        <span class="audio-icon">
+          🔊
+        </span>
+
+        <span>
+          SOUND ON
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- CAPTION -->
+
+    <figcaption>
+      Behind the development of Velino IDE.
+    </figcaption>
+
+  </figure>
+
+
+
+  <!-- =====================================================
+       PHOTO 1
+       ===================================================== -->
+
+  <figure class="photo-card reveal">
+
+    <div class="gallery-image-wrapper">
+
+      <img
+        src="icon.png"
+        alt="Velino IDE development session"
+      >
+
+    </div>
+
+    <figcaption>
+      Ideas become real when they are tested.
+    </figcaption>
+
+  </figure>
+
+
+
+  <!-- =====================================================
+       PHOTO 2
+       ===================================================== -->
+
+  <figure class="photo-card reveal">
+
+    <div class="gallery-image-wrapper">
+
+      <img
+        src="https://i.postimg.cc/85hgsy6S/IMG-4220.avif"
+        alt="Shiva with Velino IDE"
+      >
+
+    </div>
+
+    <figcaption>
+      Building and testing Velino IDE.
+    </figcaption>
+
+  </figure>
+
+
+
+  <!-- =====================================================
+       PHOTO 3
+       ===================================================== -->
+
+  <figure class="photo-card reveal">
+
+    <div class="gallery-image-wrapper">
+
+      <img
+        src="https://i.postimg.cc/d0yBKpbq/Screenshot-2025-09-12-at-11-36-52-AM.png"
+        alt="Velino IDE on laptop"
+      >
+
+    </div>
+
+    <figcaption>
+      Velino IDE in the development workflow.
+    </figcaption>
+
+  </figure>
+
+
+
+  <!-- =====================================================
+       PHOTO 4
+       ===================================================== -->
+
+  <figure class="photo-card reveal">
+
+    <div class="gallery-image-wrapper">
+
+      <img
+        src="https://i.postimg.cc/59hsNwBk/59338659-E546-4FB5-AD1E-3952CF4CC3C2-2.png"
+        alt="Developer portrait during Velino project"
+      >
+
+    </div>
+
+    <figcaption>
+      The person behind the project.
+    </figcaption>
+
+  </figure>
+
+
+</div>
+
+</section>
+
+
+
+    <!-- =========================================================
+         EXISTING FEATURES
+         ========================================================= -->
+
+    <!-- <section
+      class="section features"
+      id="features"
+    >
+
+      <div class="section-heading reveal">
+
+        <div class="section-kicker">
+          WHAT MAKES VELINO DIFFERENT
+        </div>
+
+        <h2>
+          Solutions to real problems.
+        </h2>
+
+        <p>
+          These features are not just additions. They were shaped by
+          real development experience.
+        </p>
+
+      </div>
+
+
+      <div class="feature-grid">
+
+
+        <article class="feature-card reveal">
+
+          <span>
+            01
+          </span>
+
+          <i>
+            ⌁
+          </i>
+
+          <h3>
+            Automatic Port Detection
+          </h3>
+
+          <p>
+            Reduce the manual effort of searching for the correct connected
+            board port.
+          </p>
+
+        </article>
+
+
+        <article class="feature-card reveal">
+
+          <span>
+            02
+          </span>
+
+          <i>
+            ✦
+          </i>
+
+          <h3>
+            Velino Smart AI
+          </h3>
+
+          <p>
+            Intelligent assistance for coding ideas, logic guidance,
+            debugging and prototyping.
+          </p>
+
+        </article>
+
+
+        <article class="feature-card reveal">
+
+          <span>
+            03
+          </span>
+
+          <i>
+            &lt;/&gt;
+          </i>
+
+          <h3>
+            Modern Interface
+          </h3>
+
+          <p>
+            A clean workspace designed to reduce distractions and keep
+            development focused.
+          </p>
+
+        </article>
+
+
+        <article class="feature-card reveal">
+
+          <span>
+            04
+          </span>
+
+          <i>
+            ◉
+          </i>
+
+          <h3>
+            Serial Monitor
+          </h3>
+
+          <p>
+            Observe live serial communication while testing sensors,
+            boards and applications.
+          </p>
+
+        </article>
+
+
+        <article class="feature-card reveal">
+
+          <span>
+            05
+          </span>
+
+          <i>
+            ▥
+          </i>
+
+          <h3>
+            Serial Plotter
+          </h3>
+
+          <p>
+            Visualize serial data and understand changing sensor values
+            more easily.
+          </p>
+
+        </article>
+
+
+        <article class="feature-card reveal">
+
+          <span>
+            06
+          </span>
+
+          <i>
+            ☷
+          </i>
+
+          <h3>
+            Organized Sidebar
+          </h3>
+
+          <p>
+            Keep tools and utilities structured so important actions
+            remain easy to access.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section> -->
+
+
+
+    <!-- =========================================================
+         TECHNOLOGY
+         ========================================================= -->
+
+    <section
+      class="section technology"
+      id="technology"
+    >
+
+      <div class="tech-left reveal">
+
+        <div class="section-kicker">
+          TECHNOLOGY STACK
+        </div>
+
+        <h2>
+          Where software meets hardware.
+        </h2>
+
+        <p>
+          Velino IDE combines desktop application technologies,
+          embedded development tooling and hardware communication
+          into one development ecosystem.
+        </p>
+
+      </div>
+
+
+      <div class="tech-grid reveal">
+
+
+        <div>
+          <b>
+            Electron.js
+          </b>
+
+          <small>
+            Desktop Application
+          </small>
+        </div>
+
+
+        <div>
+          <b>
+            Node.js
+          </b>
+
+          <small>
+            Runtime & Integration
+          </small>
+        </div>
+
+
+        <div>
+          <b>
+            JavaScript
+          </b>
+
+          <small>
+            Application Logic
+          </small>
+        </div>
+
+
+        <div>
+          <b>
+            HTML / CSS
+          </b>
+
+          <small>
+            User Interface
+          </small>
+        </div>
+
+
+        <div>
+          <b>
+            Arduino CLI
+          </b>
+
+          <small>
+            Build & Upload
+          </small>
+        </div>
+
+
+        <div>
+          <b>
+            Serial Communication
+          </b>
+
+          <small>
+            Hardware Debugging
+          </small>
+        </div>
+
+
+        <div>
+          <b>
+            Arduino
+          </b>
+
+          <small>
+            Embedded Platform
+          </small>
+        </div>
+
+
+        <div>
+          <b>
+            ESP32
+          </b>
+
+          <small>
+            IoT & Connectivity
+          </small>
+        </div>
+
+      </div>
+
+    </section>
+
+
+<!-- =========================================================
+     JOURNEY
+     ========================================================= -->
+
+     <section class="section journey" id="journey">
+
+      <div class="section-heading reveal">
+    
+        <div class="section-kicker">
+          DEVELOPMENT JOURNEY
+        </div>
+    
+        <h2>
+          One version at a time.
+        </h2>
+        
+    
+        <p>
+          A long cycle of experimenting, rebuilding, testing and improving.
+        </p>
+    
+      </div>
+    
+    
+      <div class="journey-layout">
+    
+    
+        <!-- =========================
+             LEFT : JOURNEY TIMELINE
+             ========================= -->
+    
+        <div class="timeline">
+    
+    
+          <div
+            class="timeline-item active reveal"
+            data-journey="idea"
+          >
+    
+            <div class="time">
+              2023
+            </div>
+    
+            <div class="timeline-content">
+    
+              <h3>
+                The Idea
+              </h3>
+    
+              <p>
+                The beginning of Velino IDE.
+              </p>
+    
+            </div>
+    
+          </div>
+    
+    
+          <div
+            class="timeline-item reveal"
+            data-journey="foundation"
+          >
+    
+            <div class="time">
+              v1 → v10
+            </div>
+    
+            <div class="timeline-content">
+    
+              <h3>
+                Foundation
+              </h3>
+    
+              <p>
+                Building the core.
+              </p>
+    
+            </div>
+    
+          </div>
+    
+    
+          <div
+            class="timeline-item reveal"
+            data-journey="expansion"
+          >
+    
+            <div class="time">
+              v11 → v20
+            </div>
+    
+            <div class="timeline-content">
+    
+              <h3>
+                Expansion
+              </h3>
+    
+              <p>
+                More tools and workflows.
+              </p>
+    
+            </div>
+    
+          </div>
+    
+    
+          <div
+            class="timeline-item reveal"
+            data-journey="intelligence"
+          >
+    
+            <div class="time">
+              v21 → v27
+            </div>
+    
+            <div class="timeline-content">
+    
+              <h3>
+                Intelligence
+              </h3>
+    
+              <p>
+                Smarter development.
+              </p>
+    
+            </div>
+    
+          </div>
+    
+    
+          <div
+            class="timeline-item current reveal"
+            data-journey="current"
+          >
+    
+            <div class="time">
+              v32
+            </div>
+    
+            <div class="timeline-content">
+    
+              <h3>
+                Current Evolution
+              </h3>
+    
+              <p>
+                The next generation of Velino IDE.
+              </p>
+    
+            </div>
+    
+          </div>
+    
+    
+        </div>
+    
+    
+        <!-- =========================
+             RIGHT : DETAILS PANEL
+             ========================= -->
+    
+        <div class="journey-details reveal">
+    
+    
+          <!-- Animated visual -->
+    
+          <div class="journey-visual">
+    
+            
+              <!-- REAL IMAGE SUPPORT
+    
+              Later replace the animated placeholder with: -->
+    
+              <!-- <img
+                id="journeyImage"
+                src="images/velino-v28.png"
+                alt="Velino IDE"
+              > -->
+<!--     
+              You can also change the image dynamically
+              from JavaScript. -->
+           
+    
+            <div class="journey-animation">
+    
+              <div class="orbit orbit-1"></div>
+              <div class="orbit orbit-2"></div>
+              <div class="orbit orbit-3"></div>
+    
+              <div class="core">
+                V
+              </div>
+    
+              <span class="particle p1"></span>
+              <span class="particle p2"></span>
+              <span class="particle p3"></span>
+              <span class="particle p4"></span>
+              <span class="particle p5"></span>
+    
+            </div>
+    
+            <!-- Future real image -->
+            <img
+              id="journeyImage"
+              class="journey-real-image"
+              src=""
+              alt=""
+            >
+    
+          </div>
+    
+    
+          <!-- Details -->
+    
+          <div class="journey-info">
+    
+            <div class="detail-version" id="journeyVersion">
+              2023
+            </div>
+    
+            <h3 id="journeyTitle">
+              The Idea
+            </h3>
+    
+            <p
+              class="detail-description"
+              id="journeyDescription"
+            >
+              The concept of a dedicated embedded development environment
+              began with the idea of creating a more connected and intelligent
+              workflow for hardware development.
+            </p>
+    
+    
+            <!-- Features -->
+    
+            <div class="detail-features">
+    
+              <div class="feature-title">
+                KEY DEVELOPMENTS
+              </div>
+    
+              <div
+                class="feature-list"
+                id="journeyFeatures"
+              >
+    
+                <div class="feature">
+                  <span>01</span>
+                  <p>Initial concept</p>
+                </div>
+    
+                <div class="feature">
+                  <span>02</span>
+                  <p>Embedded development workflow</p>
+                </div>
+    
+                <div class="feature">
+                  <span>03</span>
+                  <p>First Velino IDE experiments</p>
+                </div>
+    
+              </div>
+    
+            </div>
+    
+    
+            <!-- Bottom metadata -->
+    
+            <div class="journey-meta">
+    
+              <div>
+    
+                <span>
+                  STAGE
+                </span>
+    
+                <strong id="journeyStage">
+                  BEGINNING
+                </strong>
+    
+              </div>
+    
+              <div>
+    
+                <span>
+                  STATUS
+                </span>
+    
+                <strong id="journeyStatus">
+                  COMPLETED
+                </strong>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    </section>
+
+
+
+ <!-- =========================================================
+     VERSIONS — AUTO SCROLL
+     ========================================================= -->
+
+<section class="section versions" id="versions">
+
+  <div class="section-heading reveal">
+
+    <div class="section-kicker">
+      IMPLEMENTATION
+    </div>
+
+    <h2>
+      Version evolution.
+    </h2>
+
+    <p>
+      Every version carries part of the story.
+    </p>
+
+  </div>
+
+  <div class="version-marquee">
+
+    <!-- Moving glow -->
+    <div class="version-ai-line"></div>
+
+    <div class="version-track">
+
+      <div class="version-card">
+        <span>v1</span>
+
+        <h3>Foundation</h3>
+
+        <p>
+          The first implementation of the Velino IDE concept.
+        </p>
+
+        <div class="version-status">
+          <i></i>
+          INITIALIZED
+        </div>
+      </div>
+
+
+      <div class="version-card">
+        <span>v10</span>
+
+        <h3>Expansion</h3>
+
+        <p>
+          Core workflows and interface capabilities developed further.
+        </p>
+
+        <div class="version-status">
+          <i></i>
+          EXPANDING
+        </div>
+      </div>
+
+
+      <div class="version-card">
+        <span>v20</span>
+
+        <h3>Integration</h3>
+
+        <p>
+          Hardware-oriented features and desktop integration matured.
+        </p>
+
+        <div class="version-status">
+          <i></i>
+          INTEGRATED
+        </div>
+      </div>
+
+
+      <div class="version-card">
+        <span>v27</span>
+
+        <h3>Smart Direction</h3>
+
+        <p>
+          Improved UI and the foundation for intelligent development
+          assistance.
+        </p>
+
+        <div class="version-status">
+          <i></i>
+          INTELLIGENT
+        </div>
+      </div>
+
+
+      <div class="version-card current">
+        <span>v28</span>
+
+        <h3>Latest Evolution</h3>
+
+        <p>
+          A stronger foundation for the future of the Velino ecosystem.
+        </p>
+
+        <div class="version-status">
+          <i></i>
+          CURRENT
+        </div>
+      </div>
+
+
+      <!-- Duplicate cards for seamless infinite scrolling -->
+
+      <div class="version-card">
+        <span>v1</span>
+
+        <h3>Foundation</h3>
+
+        <p>
+          The first implementation of the Velino IDE concept.
+        </p>
+
+        <div class="version-status">
+          <i></i>
+          INITIALIZED
+        </div>
+      </div>
+
+
+      <div class="version-card">
+        <span>v10</span>
+
+        <h3>Expansion</h3>
+
+        <p>
+          Core workflows and interface capabilities developed further.
+        </p>
+
+        <div class="version-status">
+          <i></i>
+          EXPANDING
+        </div>
+      </div>
+
+
+      <div class="version-card">
+        <span>v20</span>
+
+        <h3>Integration</h3>
+
+        <p>
+          Hardware-oriented features and desktop integration matured.
+        </p>
+
+        <div class="version-status">
+          <i></i>
+          INTEGRATED
+        </div>
+      </div>
+
+
+      <div class="version-card">
+        <span>v27</span>
+
+        <h3>Smart Direction</h3>
+
+        <p>
+          Improved UI and the foundation for intelligent development
+          assistance.
+        </p>
+
+        <div class="version-status">
+          <i></i>
+          INTELLIGENT
+        </div>
+      </div>
+
+
+      <div class="version-card current">
+        <span>v28</span>
+
+        <h3>Latest Evolution</h3>
+
+        <p>
+          A stronger foundation for the future of the Velino ecosystem.
+        </p>
+
+        <div class="version-status">
+          <i></i>
+          CURRENT
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+    <!-- =========================================================
+         CONTACT
+         ========================================================= -->
+
+    <section
+      class="section contact"
+      id="contact"
+    >
+
+      <div class="contact-shell reveal">
+
+
+        <div class="contact-copy">
+
+          <div class="section-kicker">
+            CONTACT
+          </div>
+
+          <h2>
+            Have an idea?<br>
+            <span>Let's build it.</span>
+          </h2>
+
+          <p>
+            Interested in Velino IDE, embedded systems, AI, PCB design,
+            robotics or collaboration? Start a conversation.
+          </p>
+
+
+          <div class="contact-details">
+
+            <a href="mailto:shivavelishoju0827@gmail.com">
+              ✉ shivavelishoju0827@gmail.com
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/shiva-velishoju-6650982b1/"
+              target="_blank"
+              rel="noopener"
+            >
+              in LinkedIn — Shiva Velishoju
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- CONTACT FORM -->
+
+        <form
+          class="contact-form"
+          id="contactForm"
+        >
+
+          <label>
+            Name
+
+            <input
+              type="text"
+              id="contactName"
+              required
+              placeholder="Your name"
+            >
+
+          </label>
+
+
+          <label>
+            Email
+
+            <input
+              type="email"
+              id="contactEmail"
+              required
+              placeholder="you@example.com"
+            >
+
+          </label>
+
+
+          <label>
+            Message
+
+            <textarea
+              id="contactMessage"
+              required
+              rows="5"
+              placeholder="Tell me about your idea..."
+            ></textarea>
+
+          </label>
+
+
+          <button
+            class="btn primary"
+            type="submit"
+          >
+
+            Start a conversation
+
+            <span>
+              →
+            </span>
+
+          </button>
+
+
+          <small id="formStatus"></small>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+
+  <footer>
+
+    <div class="footer-brand">
+
+      <span class="brand-mark">
+        &lt;/&gt;
+      </span>
+
+      Velino IDE
+
+    </div>
+
+
+    <p>
+      Powered by Velino Ecosystem
+    </p>
+
+
+    <span>
+      © <span id="year"></span> Shiva Velishoju
+    </span>
+
+  </footer>
+
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+       ========================================================= -->
+
+  <script src="script.js"></script>
+
+
+  <!-- =========================================================
+       IDE FEATURE ANIMATION
+       ========================================================= -->
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+      const featureItems =
+        document.querySelectorAll(".ide-feature-item");
+
+      if (!featureItems.length) return;
+
+
+      /* ---------------------------------------------------------
+         CLICK / HOVER FEATURE SELECTION
+         --------------------------------------------------------- */
+
+      featureItems.forEach((item) => {
+
+        item.addEventListener("mouseenter", () => {
+
+          featureItems.forEach((feature) => {
+            feature.classList.remove("active");
+          });
+
+          item.classList.add("active");
+
+          const index =
+            Number(item.dataset.feature);
+
+          currentFeature = index;
+
+        });
+
+
+        item.addEventListener("click", () => {
+
+          featureItems.forEach((feature) => {
+            feature.classList.remove("active");
+          });
+
+          item.classList.add("active");
+
+          const index =
+            Number(item.dataset.feature);
+
+          currentFeature = index;
+
+        });
+
+      });
+
+
+      /* ---------------------------------------------------------
+         AUTOMATIC FEATURE ANIMATION
+         --------------------------------------------------------- */
+
+      let currentFeature = 0;
+
+      const featureInterval =
+        setInterval(() => {
+
+          currentFeature++;
+
+          if (
+            currentFeature >=
+            featureItems.length
+          ) {
+            currentFeature = 0;
+          }
+
+          featureItems.forEach((feature) => {
+            feature.classList.remove("active");
+          });
+
+          featureItems[currentFeature]
+            .classList.add("active");
+
+        }, 4500);
+
+
+      /* ---------------------------------------------------------
+         PAUSE AUTOMATIC ANIMATION WHEN MOUSE IS OVER FEATURES
+         --------------------------------------------------------- */
+
+      const featureSection =
+        document.querySelector("#ide-features");
+
+      if (featureSection) {
+
+        featureSection.addEventListener(
+          "mouseenter",
+          () => {
+            // Interaction handled by hover.
+          }
+        );
+
+      }
+
+    });
+
+
+  </script>
+
+
+</body>
+</html>
