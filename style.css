@@ -6187,3 +6187,64 @@ footer {
     }
   
   }
+  
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px; /* Rounded corners */
+    object-fit: contain;
+    display: block;
+  }
+  
+  .footer-brand > span {
+    font-weight: 600;
+  }
+  
+  .story-ending-mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .story-ending-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px; /* Rounded corners */
+    object-fit: contain;
+    display: block;
+  }
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-weight: 600;
+}
+
+/* Optional: subtle hover effect */
+.brand-logo {
+  transition: transform 0.25s ease;
+}
+
+.brand:hover .brand-logo {
+  transform: scale(1.05);
+}
